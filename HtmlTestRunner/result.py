@@ -13,7 +13,7 @@ from jinja2 import Template
 
 DEFAULT_TEMPLATE = os.path.join(os.path.dirname(__file__), "template", "report_template.html")
 
-
+def load_template(template):
     """ Try to read a file from a given path, if file
         does not exist, load default one. """
     file = None
